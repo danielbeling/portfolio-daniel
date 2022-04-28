@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/about.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>About - Daniel Beling</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <h1 class="logo">Daniel Beling</h1>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+        <nav class="nav">
+            <ul class="list-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../project/index.html">View Project</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+        
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo">About</h1>
+        <p class="second">Front End Engineer</p>
+        <section>
+            <h1 class="titulo2">Daniel Beling</h1>
+            <div class="linha"></div>
+
+            <p class="p">Hi, I'm Daniel Beling, I'm 20 years old, I'm from Rondônia, I'm a Front-End Developer, I
+                love
+                to program,<br> Go to the gym and play games, go out with friends, my favorite food is Pizza.</p>
+            <p class="p">Lately I'm learning a lot about Front-End, soon I'm looking to learn Back End and become a
+                <br>Full
+                Stack programmer.</p>
+            <p class="p">Feel free to get in touch or take a look at my work below.</p>
+
+            <div class="btns">
+                <a href="../project/index.html"><button>View Work</button></a>
+            </div>
+
+
+        </section>
+    </main>
+    <script type="text/javascript">
+        function toggleMenu() {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>

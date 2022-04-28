@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/project.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>View Project - Daniel Beling</title>
+</head>
+
+<body>
+    <header class="header-principal">
+        <h1 class="logo">Daniel Beling</h1>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+        <nav class="nav">
+            <ul class="list-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../project/index.html">View Project</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+        
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titulo">
+            <h1 class="titulo-principal">View Project</h1>
+            <p>Front End Engineer</p>
+        </div>
+
+        <section class="flex">
+            <div class="port">
+                <h1>Portfólio</h1>
+                <div class="linha"></div>
+                <p>In this project I put all my skills and projects inside a single site. </p>
+                <div class="btns">
+                    <a href="" target="_blank"><button>Know more</button></a>
+                </div>
+            </div>
+
+            <div class="calc">
+                <h1>Calculator</h1>
+                <div class="linha"></div>
+                <p>In this project develop a Calculator to put and improve my skills.</p>
+
+                <div class="btns">
+                    <a href="https://danielbeling.github.io/calculadora/" target="_blank"><button>Know more</button></a>
+                </div>
+            </div>
+
+            <div class="cordel">
+                <h1>Modern twine</h1>
+                <div class="linha"></div>
+                <p>In this Project, a poem by Milton Duarte tells about technology.</p>
+
+                <div class="btns">
+                    <a href="https://danielbeling.github.io/projeto-cordel/" target="_blank"><button>Know more</button></a>
+                </div>
+            </div>
+
+            <div class="mascote">
+                <h1>Android Mascot</h1>
+                <div class="linha"></div>
+                <p>In this project tells about the history of the Android Mascot.</p>
+
+                <div class="btns">
+                    <a href="https://danielbeling.github.io/projetoandroid/" target="_blank"><button>Know more</button></a>
+                </div>
+            </div>
+
+            <div class="time">
+                <h1>Kong Suplementos</h1>
+                <div class="linha"></div>
+                <p>In this project a website was developed for him to sell his products.</p>
+                <div class="btns">
+                    <a href="#" target="_blank"><button>Know more</button></a>
+                </div>
+            </div>
+
+    
+            
+        </section>
+
+    </main>
+    <script type="text/javascript">
+        function toggleMenu() {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body {
+    background: linear-gradient(rgba(34, 34, 34, 0.3), rgba(20, 20, 20, 1)), url('../img/fundo02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-principal {
+    background-color: rgba(22, 22, 22, 0.2);
+    height: 5vh;
+}
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}   
+
+header .logo {
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+header .list-menu {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+header .nav li {
+    list-style: none;
+}
+
+.list-menu li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.list-menu li a::before {
+    content: ' ';
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: all .6s ease;
+
+}
+
+.list-menu li a:hover:before {
+    width: 100%;
+}
+.nav ul li{
+    margin-top: 10px;
+}
+
+.titulo-principal {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+}
+
+section div > h1 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+section div > p {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+    text-align: justify;
+}
+
+.linha {
+    border: 1px solid rgba(255, 255, 255, 0.082);
+}
+/* flexbox */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.flex > div {
+    border-radius: 5px;
+    flex: 1 1 200px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.26);
+    height: 300px;
+}   
+
+.btns {
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.btns button {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: 1.5s;
+}
+
+.btns button:hover {
+    color: rgba(253, 255, 125, 0.808);
+    border: none;
+}
+
+@media (max-width: 660px) {
+    header .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.979);
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    header .list-menu {
+        flex-direction: column;
+    }
+    header .nav.active {
+        display: flex;
+    }
+    header .nav li a {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .toggleMenu {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(../img/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 11;
+    }
+    .toggleMenu.active {
+        background: url(../img/close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+    .flex {
+        margin-top: 20px;
+    }
+    section .flex {
+         display: flex;
+         width: 200px;
+     }
+     .flex > div {
+         height: 186px;
+         margin: 5px;
+     }
+
+     .btns {
+         margin-top: 5px;
+     }
+     .btns button {
+         width: 140px;
+         height: 35px;
+     }
+     .titulo-principal {
+        margin-top: 30px;
+    }
+}
+

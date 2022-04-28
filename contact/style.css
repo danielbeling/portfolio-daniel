@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(34, 34, 34, 0.3), rgba(20, 20, 20, 1)), url('../img/fundo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-principal {
+    background-color: rgba(22, 22, 22, 0.2);
+    height: 5vh;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+header .list-menu {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+header .nav li {
+    list-style: none;
+}
+
+.list-menu li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.list-menu li a::before {
+    content: ' ';
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: all .6s ease;
+
+}
+
+.list-menu li a:hover:before {
+    width: 100%;
+}
+
+aside {
+    margin: auto;
+    margin-top: 2%;
+    height: 400px;
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0.171);
+    border-radius: 20px;
+}
+
+aside h1 {
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.linha {
+    border: 1px solid rgba(255, 255, 255, 0.048);
+    margin-bottom: 50px;
+}
+
+main .titulo {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+main .front {
+    text-align: center;
+    font-size: 1rem;
+}
+
+aside h2>img {
+    height: 25px;
+}
+
+aside a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.4rem;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+p img {
+    margin-left: 20px;
+    height: 20px;
+}
+
+p a:hover {
+    color: rgba(122, 184, 255, 0.808);
+
+}
+
+@media (max-width: 660px) {
+    header .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.979);
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .list-menu {
+        flex-direction: column;
+    }
+
+    header .nav.active {
+        display: flex;
+    }
+
+    header .nav li a {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .toggleMenu {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(../img/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .toggleMenu.active {
+        background: url(../img/close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+
+    aside {
+        margin: auto;
+        margin-top: 2%;
+        height: 400px;
+        width: 400px;
+        background-color: rgba(0, 0, 0, 0.171);
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 399px) {
+
+    aside {
+        width: 350px;
+    }
+}
+
+@media (max-width: 352px) {
+
+    aside {
+        width: 340px;
+    }
+}
+

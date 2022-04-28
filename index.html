@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Daniel Beling</title>
+</head>
+<body>
+    <header class="header-principal">
+        <h1 class="logo">Daniel Beling</h1>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+        <nav class="nav">
+            <ul class="list-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="./project/index.html">View Project</a></li>
+                <li><a href="./about/index.html">About</a></li>
+                <li><a href="./contact/index.html">Contact</a></li>
+        
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="titulo-principal">I'm Daniel Beling</h1>
+        <p>Front End Engineer</p>
+        <div class="btns">
+            <a href="./contact/index.html"><button>Request Service</button></a>
+        </div>
+    </main>
+   
+    <script type="text/javascript">
+        function toggleMenu() {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/contact.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact - Daniel Beling</title>
+</head>
+<body>
+    <header class="header-principal">
+        <h1 class="logo">Daniel Beling</h1>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+        <nav class="nav">
+            <ul class="list-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../project/index.html">View Project</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
+        
+            </ul>
+        </nav>
+    </header>
+        
+    <main>
+        <h1 class="titulo">Contact me</h1>
+        <p class="front">Front End Engineer</p>
+        <aside>
+            <h1>Let's talk business</h1>
+            <div class="linha"></div>
+            <p><img src="../img/linke.png"><a href="https://www.linkedin.com/in/daniel-beling-293146236/" target="_blank">Daniel Beling</a></p>
+            <p><img src="../img/insta.png"><a href="https://www.instagram.com/unkw_sz/" target="_blank">@Unkw_sz</a></p>
+            <p><img class="dc" src="../img/dc.png"><a href="https://discord.com" target="_blank">! Megy#0069</a></abbr></p>
+            <p><img src="../img/email.png"><a href="mailto:carlosberling@outlook.com" target="_blank">carlosberling@outlook.com</a></p>
+        </aside>
+
+    </main>
+    <script type="text/javascript">
+        function toggleMenu() {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
+    
+</body>
+</html>
