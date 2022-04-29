@@ -218,3 +218,27 @@ section {
         
     }
 }
+
+@media (max-width: 335px) { 
+    .linha {
+        width: 200px;
+    }
+    
+    section {
+        
+        width: 80%;
+        
+    }
+}
+
+@media (max-width: 292px) { 
+    .linha {
+        width: 200px;
+    }
+    
+    section {
+        
+        width: 90%;
+        
+    }
+}
